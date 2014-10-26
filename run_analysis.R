@@ -30,8 +30,8 @@ colnames(merged_df)<-c("Subjects","Activity",features)
 
 ##2. Extract Mean and Std.Dev from the merged_df
 print("Extracting mean and std observations ....")
-meancols<-grep("mean",colnames(merged_df))
-stdcols<-grep("std",colnames(merged_df))
+meancols<-grep("mean()",colnames(merged_df),fixed=TRUE)
+stdcols<-grep("std()",colnames(merged_df),fixed=TRUE)
 
 merged_meanstd<-merged_df[,c(1,2,meancols,stdcols)]
 
