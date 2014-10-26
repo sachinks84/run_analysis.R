@@ -13,7 +13,7 @@
 * features         UCI HAR Dataset/features.txt
 * activity_names   UCI HAR Dataset/activity_labels.txt
 
-**dataframes crated from merge **
+**dataframes crated from merge**
 
 * activity        row merge of df_ytest & df_ytrain
 * subjects         row merge df_subtest & df_subtrain
